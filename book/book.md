@@ -6,6 +6,7 @@ papersize: a4
 fontfamily: palatino
 fontsize: 11pt
 documentclass: book
+colorlinks: true
 ---
 
 #include "chapters/introduction.md"
