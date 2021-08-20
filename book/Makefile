@@ -5,7 +5,7 @@ PANDOC_FLAGS = \
 
 all: $(OUTPUT_FILES)
 
-output/%.pdf: %.md
+output/%.pdf: %.md chapters/*.md
 	filepp $< | pandoc -o $@ $(PANDOC_FLAGS)
 
 clean:
