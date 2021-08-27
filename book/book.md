@@ -10,3 +10,5 @@ colorlinks: true
 ---
 
 #include "chapters/introduction.md"
+#include "chapters/docker-command-line.md"
+#include "chapters/docker-compose.md"
