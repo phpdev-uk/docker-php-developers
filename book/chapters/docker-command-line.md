@@ -53,3 +53,24 @@ $ docker rm $(docker ps --all --quiet --filter status=exited)
 
 You may want to create an alias or shell script for the above command, e.g. as `docker-rm-all`.
 
+Docker can also remove containers as soon as they stop with the `--rm` option:
+
+```bash
+$ docker run --rm debian
+```
+
+## Docker cleanup
+
+An example script that will stop all running containers, remove all stopped containers, and prune any unused volumes (prompting to make sure this is what you want):
+
+```bash
+#!/bin/bash
+
+docker stop $(docker ps -aq)
+docker rm -v $(docker ps -aq -f status=exited)
+docker volume prune
+```
+
+This will effectively reset all your Docker environments, so run this script with caution. It will not delete any images on disk, so you will not need to download them again.
+
+
