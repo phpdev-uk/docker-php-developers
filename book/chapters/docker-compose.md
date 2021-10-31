@@ -34,7 +34,7 @@ Visit [http://localhost:8080](http://localhost:8080) in a web browser and you sh
 
 In addition to `docker-compose.yml`, you can also specify an overrides file, which by convention is named `docker-compose.override.yml`. This allows you to have a base configuration which applies to all of your environments (production, staging, development etc.), whilst providing per-environment options such as hostnames.
 
-In addition, an overrides file allows you to store credentials without committing them to version control (your main `docker-compose.yml` should be in version control so that other developers receive it when cloning the repository).
+In addition, an overrides file allows you to store credentials without committing them to version control (your main `docker-compose.yml` should be in version control so that other developers receive it when cloning the repository). If you want to include an example overrides file, the convention is to call it `docker-compose.override.yml.dist`, which developers can copy to `docker-compose.override.yml`.
 
 ## Docker Compose from now on
 
