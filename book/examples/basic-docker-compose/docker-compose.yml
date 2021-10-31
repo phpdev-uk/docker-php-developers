@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   app:
     image: php:7.4-apache-buster
