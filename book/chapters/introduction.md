@@ -17,7 +17,7 @@ Whilst this is an introductory book on Docker, I am making some assumptions abou
  * You are running a recent version of Linux or macOS, released within the last 2 years.
  * If you are running macOS, you have Homebrew installed.
 
-I use the latest Ubuntu LTS (20.04) as my main development machine, and any examples are tested on that environment.
+I use the latest Ubuntu LTS (22.04) as my main development machine, and any examples are tested on that environment.
 
 ## Installing Docker
 
