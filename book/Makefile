@@ -6,10 +6,10 @@ PANDOC_FLAGS = \
 all: $(OUTPUT_FILES)
 
 output/%.pdf: %.md chapters/*.md
-	filepp $< | pandoc -o $@ $(PANDOC_FLAGS)
+	gpp $< | pandoc -o $@ $(PANDOC_FLAGS)
 
 output/%.html: %.md chapters/*.md
-	filepp $< | pandoc -o $@ $(PANDOC_FLAGS)
+	gpp $< | pandoc -o $@ $(PANDOC_FLAGS)
 
 clean:
 	rm -f output/*
